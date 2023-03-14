@@ -14,9 +14,9 @@ namespace CodeFirst.Models
         public virtual Cliente Cliente { get; set; }
 
         public int Id_Tipo_documento { get; set; }
-      
         [ForeignKey("Id_Tipo_documento")]
-        public virtual Tipo_documento Tipo_Documento { get; set; }
+        public virtual Tipo_documento Tipo_documento { get; set; }
+
         public int ArticuloID { get; set; }
         [ForeignKey("ArticuloID")]
         public virtual Articulo Articulo { get; set; }

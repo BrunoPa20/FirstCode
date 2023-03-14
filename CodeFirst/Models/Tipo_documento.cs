@@ -9,7 +9,7 @@ namespace CodeFirst.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id_Tipo_documento { get; set; }
       
-        public string Documento { get; set; }
+        public string TipoDocumento { get; set; }
         public string Descripcion { get; set; }
 
         
