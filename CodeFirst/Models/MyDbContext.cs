@@ -6,7 +6,7 @@ namespace CodeFirst.Models
     {
 
         public DbSet<Articulo> articulos { get; set; }
-        public DbSet<Cliente> clientes { get; set; }
+        public DbSet<Historial> clientes { get; set; }
 
         public DbSet<Tipo_documento> tipo_Documentos { get; set; }
 
