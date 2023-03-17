@@ -3,16 +3,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CodeFirst.Models
 {
-    public class Cliente
+    public class Historial
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id_cliente { get; set; }
-        public string Nombre { get; set; }
-        public string Direccion { get; set; }
-        public string Telefono { get; set; }
+        public int IDHistorial { get; set; }
+        public string H_Pregunta { get; set; }
+        public string H_Categoria { get; set; }
+        public string H_Respuesta { get; set; }
+        public string H_Estado { get; set; }
 
-
-
+        public int IDPaciente { get; set; }
     }
 }

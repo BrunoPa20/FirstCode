@@ -3,24 +3,24 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CodeFirst.Models
 {
-    public class Venta
+    public class Agenda
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int num_venta { get; set; }
+        public int IDAgenda { get; set; }
+        public string Motivo { get; set; }
+        public DateTime Fecha_Hora_Inicio { get; set; }
+        public DateTime Fecha_Hora_Fin { get; set; }
+        //
+        public int IDPaciente { get; set; }
+        public int IDOdontologo { get; set; }
 
-        public int Id_cliente { get; set; }
-        [ForeignKey("Id_cliente")]
-        public virtual Historial Cliente { get; set; }
+        //Propiedades de navegacion
+         public Odontologo Odontologo { get; set; }
+         public Paciente Paciente { get; set; }
 
-        public int Id_Tipo_documento { get; set; }
-        [ForeignKey("Id_Tipo_documento")]
-        public virtual Tipo_documento Tipo_documento { get; set; }
 
-        public int ArticuloID { get; set; }
-        [ForeignKey("ArticuloID")]
-        public virtual Articulo Articulo { get; set; }
+
+
     }
-  
+
 
 }

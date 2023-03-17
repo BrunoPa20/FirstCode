@@ -3,16 +3,16 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CodeFirst.Models
 {
-    public class Tipo_documento
+    public class Tutor_Padre
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id_Tipo_documento { get; set; }
-      
-        public string TipoDocumento { get; set; }
-        public string Descripcion { get; set; }
+        public int ID_Tutor_Padre { get; set; }
+        public string TP_Nombre { get; set; }
+        public string TP_Telefono { get; set; }
+        public string TP_Ocupacion { get; set; }
 
-        
+        public int IDPaciente { get; set; }
+
+        //Propiedades de navegacion
 
 
 
