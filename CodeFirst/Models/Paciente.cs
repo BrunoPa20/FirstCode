@@ -18,6 +18,9 @@ namespace CodeFirst.Models
         public List<Agenda> Agendas { get; set; }
         public List<Historial> Historials { get; set; }
         public List<Tutor_Padre> Tutor_Padres { get; set; }
+        public List<Pago_Tratamiento> Pago_Tratamientos { get; set; }
+
+
 
 
     }

@@ -12,7 +12,8 @@ namespace CodeFirst.Models
         public int T_Monto { get; set; }
         public int Saldo { get; set; }
         //Propiedades de navegacion
-        public List<Realiza> Realizas { get; set; } 
+        public List<Realiza> Realizas { get; set; }
+        public List<Pago_Tratamiento> Pago_Tratamientos { get; set; }
 
     }
 }

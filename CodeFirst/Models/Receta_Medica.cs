@@ -10,5 +10,10 @@ namespace CodeFirst.Models
         public string Dosis { get; set; }
         public string Tiempo { get; set; }
 
+        //--------------------------------------
+        public int IDTratamiento { get; set; }
+        //Propiedades de navegacion
+        public Tratamiento Tratamiento { get; set; }
+
     }
 }

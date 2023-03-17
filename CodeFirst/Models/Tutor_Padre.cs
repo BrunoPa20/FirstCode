@@ -14,6 +14,7 @@ namespace CodeFirst.Models
 
         //Propiedades de navegacion
 
+        public Paciente Paciente { get; set; }
 
 
     }

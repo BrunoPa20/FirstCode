@@ -12,5 +12,9 @@ namespace CodeFirst.Models
         public string H_Estado { get; set; }
 
         public int IDPaciente { get; set; }
+
+        //Propiedades de navegacion
+        public Paciente Paciente { get; set; }
+
     }
 }
