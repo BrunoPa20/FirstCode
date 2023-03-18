@@ -100,6 +100,8 @@ namespace CodeFirst.Models
             modelBuilder.Entity<Receta_Medica>().Property(rm => rm.Tiempo).HasMaxLength(50);
             modelBuilder.Entity<Receta_Medica>().HasOne<Tratamiento>(o => o.Tratamiento).WithMany(o => o.Receta_Medicas).HasForeignKey(pt => pt.IDTratamiento);
 
+            //-------------------------------------------------------------------------------------------------
+            modelBuilder.Entity<Tratamiento>().HasKey(t => t.IDTratamiento);
 
 
 
@@ -110,8 +112,7 @@ namespace CodeFirst.Models
 
 
 
-
-        public DbSet<Agenda> Agendas => Set<Agenda>();
+        public DbSet<Agenda> agendas { get; set; }
         public DbSet<Paciente> Pacientes { get; set; }
         public DbSet<Historial> Historials { get; set; }
         public DbSet<Odontologo> Odontologos { get; set; }

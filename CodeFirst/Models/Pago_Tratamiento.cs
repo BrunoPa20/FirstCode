@@ -10,7 +10,7 @@ namespace CodeFirst.Models
         public int PT_Monto { get; set; }
         //-----------------------------------------
         public int IDPaciente { get; set; }
-        public int IDOdontologo { get; set; }
+        public int IDTratamiento { get; set; }
 
         //Propiedades de navegacion
 

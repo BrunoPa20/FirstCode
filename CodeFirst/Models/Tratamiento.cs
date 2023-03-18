@@ -14,6 +14,11 @@ namespace CodeFirst.Models
         //Propiedades de navegacion
         public List<Realiza> Realizas { get; set; }
         public List<Pago_Tratamiento> Pago_Tratamientos { get; set; }
+        public List<Receta_Medica> Receta_Medicas { get; set; }
+        public List<Odontograma> Odontogramas { get; set; }
+
+
+
 
     }
 }
