@@ -6,7 +6,7 @@ namespace CodeFirst.Models
     public class Odontologo
     {
         public int IDOdontologo { get; set; }
-        public string OD_Nombre { get; set; } = null!;
+        public string OD_Nombre { get; set; } 
         public string OD_Telefono { get; set; }
         public string OD_Domicilio { get; set; }
         public string OD_Turno { get; set; }

@@ -15,12 +15,15 @@ namespace CodeFirst.Models
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Agenda>().HasKey(a => a.IDAgenda);
+            modelBuilder.Entity<Agenda>().HasKey(a => new {a.IDPaciente,a.IDOdontologo});
+           
             modelBuilder.Entity<Agenda>().Property(a => a.Motivo).HasMaxLength(50);
             modelBuilder.Entity<Agenda>().Property(a => a.Fecha_Hora_Inicio).HasColumnType("date");
             modelBuilder.Entity<Agenda>().Property(a => a.Fecha_Hora_Fin).HasColumnType("date");
-            modelBuilder.Entity<Agenda>().HasOne<Odontologo>(a => a.Odontologo).WithMany(a =>a.Agendas).HasForeignKey(r => r.IDOdontologo);
-            modelBuilder.Entity<Agenda>().HasOne<Paciente>(a => a.Paciente).WithMany(a => a.Agendas).HasForeignKey(r => r.IDPaciente);
+            //modelBuilder.Entity<Agenda>().HasOne<Odontologo>(a => a.Odontologo).WithMany(a =>a.Agendas).HasForeignKey(a =>a.IDOdontologo);
+            modelBuilder.Entity<Agenda>().HasOne<Odontologo>(a => a.Odontologo).WithMany(a => a.Agendas).HasForeignKey(a => a.IDOdontologo);
+            modelBuilder.Entity<Agenda>().HasOne<Paciente>(a => a.Paciente).WithMany(a => a.Agendas).HasForeignKey(a => a.IDPaciente);
+          
 
 
 
@@ -41,7 +44,7 @@ namespace CodeFirst.Models
             modelBuilder.Entity<Historial>().Property(h => h.H_Categoria).HasMaxLength(50);
             modelBuilder.Entity<Historial>().Property(h => h.H_Respuesta).HasMaxLength(50);
             modelBuilder.Entity<Historial>().Property(h => h.H_Estado).HasMaxLength(50);
-            modelBuilder.Entity<Historial>().HasOne<Paciente>(h => h.Paciente).WithMany(a => a.Historials).HasForeignKey(h => h.IDPaciente);
+            modelBuilder.Entity<Historial>().HasOne<Paciente>(h => h.Paciente).WithMany(h => h.Historials).HasForeignKey(h => h.IDPaciente);
 
 
             //-------------------------------------------------------------------------------------------------
