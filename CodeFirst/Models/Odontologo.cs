@@ -14,7 +14,7 @@ namespace CodeFirst.Models
         public string OD_Password { get; set; }
 
         //Propiedades de navegacion
-        public List<Agenda> Agendas { get; set; }
+        //public List<Agenda> Agendas { get; set; }
 
     }
 }

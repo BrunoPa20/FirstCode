@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bruno\\Source\\Repos\\FirstCode\\CodeFirst\\CodeFirst.csproj": {}
+    "C:\\Users\\User\\source\\repos\\pr\\CodeFirst\\CodeFirst.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bruno\\Source\\Repos\\FirstCode\\CodeFirst\\CodeFirst.csproj": {
+    "C:\\Users\\User\\source\\repos\\pr\\CodeFirst\\CodeFirst.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruno\\Source\\Repos\\FirstCode\\CodeFirst\\CodeFirst.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\pr\\CodeFirst\\CodeFirst.csproj",
         "projectName": "CodeFirst",
-        "projectPath": "C:\\Users\\Bruno\\Source\\Repos\\FirstCode\\CodeFirst\\CodeFirst.csproj",
-        "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruno\\Source\\Repos\\FirstCode\\CodeFirst\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\pr\\CodeFirst\\CodeFirst.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\pr\\CodeFirst\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -63,6 +63,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.13, )"
             }
           },
           "imports": [
@@ -84,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
