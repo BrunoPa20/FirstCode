@@ -13,12 +13,21 @@ namespace CodeFirst.Models
         public DateTime P_FechaNac { get; set; }
         public string P_Ocupacion { get; set; }
 
+        public Paciente()
+        {
+            Realizas = new List<Realiza>();
+            Agendas = new List<Agenda>();
+            Historials = new List<Historial>();
+            Tutor_Padres = new List<Tutor_Padre>();
+            Pago_Tratamientos = new List<Pago_Tratamiento>();
+        }
+
         //Propiedades de navegacion
-        public List<Realiza> Realizas { get; set; }
-        public List<Agenda> Agendas { get; set; }
-        public List<Historial> Historials { get; set; }
-        public List<Tutor_Padre> Tutor_Padres { get; set; }
-        public List<Pago_Tratamiento> Pago_Tratamientos { get; set; }
+        public virtual List<Realiza> Realizas { get; set; }
+        public virtual List<Agenda> Agendas { get; set; }
+        public virtual List<Historial> Historials { get; set; }
+        public virtual List<Tutor_Padre> Tutor_Padres { get; set; }
+        public virtual List<Pago_Tratamiento> Pago_Tratamientos { get; set; }
 
 
 

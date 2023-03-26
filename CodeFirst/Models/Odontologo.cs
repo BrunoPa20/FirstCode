@@ -13,8 +13,13 @@ namespace CodeFirst.Models
         public string OD_Usuario { get; set; }
         public string OD_Password { get; set; }
 
+        public Odontologo()
+        {
+            Agendas = new List<Agenda>();
+        }
+
         //Propiedades de navegacion
-        //public List<Agenda> Agendas { get; set; }
+        public List<Agenda> Agendas { get; set; }
 
     }
 }

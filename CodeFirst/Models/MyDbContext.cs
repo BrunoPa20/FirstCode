@@ -20,8 +20,8 @@ namespace CodeFirst.Models
             modelBuilder.Entity<Agenda>().Property(a => a.Motivo).HasMaxLength(50);
             modelBuilder.Entity<Agenda>().Property(a => a.Fecha_Hora_Inicio).HasColumnType("date");
             modelBuilder.Entity<Agenda>().Property(a => a.Fecha_Hora_Fin).HasColumnType("date");
-            //modelBuilder.Entity<Agenda>().HasOne<Odontologo>(a => a.Odontologo).WithMany(a =>a.Agendas).HasForeignKey(a =>a.IDOdontologo);
-            //modelBuilder.Entity<Agenda>().HasOne<Odontologo>(a => a.Odontologo).WithMany(a => a.Agendas).HasForeignKey(a => a.IDOdontologo);
+           // modelBuilder.Entity<Agenda>().HasOne<Odontologo>(a => a.Odontologo).WithMany(a =>a.Agendas).HasForeignKey(a =>a.IDOdontologo);
+            modelBuilder.Entity<Agenda>().HasOne<Odontologo>(a => a.Odontologo).WithMany(a => a.Agendas).HasForeignKey(a => a.IDOdontologo);
             modelBuilder.Entity<Agenda>().HasOne<Paciente>(a => a.Paciente).WithMany(a => a.Agendas).HasForeignKey(a => a.IDPaciente);
           
 
