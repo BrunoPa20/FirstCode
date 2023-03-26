@@ -11,6 +11,15 @@ namespace CodeFirst.Models
         public string T_Tipo { get; set; }
         public int T_Monto { get; set; }
         public int Saldo { get; set; }
+
+        public Tratamiento()
+        {
+            Realizas = new List<Realiza>();
+            Pago_Tratamientos = new List<Pago_Tratamiento>();
+            Receta_Medicas = new List<Receta_Medica>();
+            Odontogramas = new List<Odontograma>();
+        }
+
         //Propiedades de navegacion
         public List<Realiza> Realizas { get; set; }
         public List<Pago_Tratamiento> Pago_Tratamientos { get; set; }
