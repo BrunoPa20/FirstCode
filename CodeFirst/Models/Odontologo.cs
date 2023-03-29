@@ -15,11 +15,11 @@ namespace CodeFirst.Models
 
         public Odontologo()
         {
-            Agendas = new List<Agenda>();
+            Agenda = new List<Agenda>();
         }
 
         //Propiedades de navegacion
-        public List<Agenda> Agendas { get; set; }
+        public List<Agenda> Agenda { get; set; }
 
     }
 }

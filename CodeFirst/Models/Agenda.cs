@@ -5,6 +5,9 @@ namespace CodeFirst.Models
 {
     public class Agenda
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int IDAgenda { get; set; }
         public string Motivo { get; set; }
         public DateTime Fecha_Hora_Inicio { get; set; }
         public DateTime Fecha_Hora_Fin { get; set; }
@@ -14,8 +17,8 @@ namespace CodeFirst.Models
         public int IDOdontologo { get; set; }
 
         //Propiedades de navegacion
-         public Odontologo Odontologo { get; set; }
-         public Paciente Paciente { get; set; }
+        public Odontologo Odontologo { get; set; }
+        public Paciente Paciente { get; set; }
 
 
 

@@ -4,6 +4,7 @@ using CodeFirst.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CodeFirst.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    partial class MyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230329045100_nuevo1")]
+    partial class nuevo1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,40 +24,6 @@ namespace CodeFirst.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("CodeFirst.Models.Agenda", b =>
-                {
-                    b.Property<int>("IDAgenda")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IDAgenda"));
-
-                    b.Property<DateTime>("Fecha_Hora_Fin")
-                        .HasColumnType("date");
-
-                    b.Property<DateTime>("Fecha_Hora_Inicio")
-                        .HasColumnType("date");
-
-                    b.Property<int>("IDOdontologo")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IDPaciente")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Motivo")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("IDAgenda");
-
-                    b.HasIndex("IDOdontologo");
-
-                    b.HasIndex("IDPaciente");
-
-                    b.ToTable("agendas");
-                });
 
             modelBuilder.Entity("CodeFirst.Models.Historial", b =>
                 {
@@ -363,25 +332,6 @@ namespace CodeFirst.Migrations
                     b.ToTable("Tutor_Padres");
                 });
 
-            modelBuilder.Entity("CodeFirst.Models.Agenda", b =>
-                {
-                    b.HasOne("CodeFirst.Models.Odontologo", "Odontologo")
-                        .WithMany("Agenda")
-                        .HasForeignKey("IDOdontologo")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CodeFirst.Models.Paciente", "Paciente")
-                        .WithMany("Agenda")
-                        .HasForeignKey("IDPaciente")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Odontologo");
-
-                    b.Navigation("Paciente");
-                });
-
             modelBuilder.Entity("CodeFirst.Models.Historial", b =>
                 {
                     b.HasOne("CodeFirst.Models.Paciente", "Paciente")
@@ -464,15 +414,8 @@ namespace CodeFirst.Migrations
                     b.Navigation("Paciente");
                 });
 
-            modelBuilder.Entity("CodeFirst.Models.Odontologo", b =>
-                {
-                    b.Navigation("Agenda");
-                });
-
             modelBuilder.Entity("CodeFirst.Models.Paciente", b =>
                 {
-                    b.Navigation("Agenda");
-
                     b.Navigation("Historials");
 
                     b.Navigation("Pago_Tratamientos");

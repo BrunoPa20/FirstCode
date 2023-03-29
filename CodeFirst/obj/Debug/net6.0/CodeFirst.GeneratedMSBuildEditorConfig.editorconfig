@@ -5,121 +5,120 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CodeFirst
 build_property.RootNamespace = CodeFirst
-build_property.ProjectDir = C:\Users\Bruno\Source\Repos\FirstCode\CodeFirst\
+build_property.ProjectDir = C:\Users\User\source\repos\Nueva carpeta\CodeFirst\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Bruno\Source\Repos\FirstCode\CodeFirst
+build_property.MSBuildProjectDirectory = C:\Users\User\source\repos\Nueva carpeta\CodeFirst
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Agenda/Create.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Agenda/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Agenda/Delete.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Agenda/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Agenda/Details.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Agenda/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Agenda/Edit.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Agenda/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Agenda/Index.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Agenda/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Home/Index.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Home/Privacy.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Odontologoes/Create.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Odontologoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2RvbnRvbG9nb2VzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Odontologoes/Delete.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Odontologoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2RvbnRvbG9nb2VzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Odontologoes/Details.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Odontologoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2RvbnRvbG9nb2VzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Odontologoes/Edit.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Odontologoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2RvbnRvbG9nb2VzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Odontologoes/Index.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Odontologoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2RvbnRvbG9nb2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Pacientes/Create.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Pacientes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Pacientes/Delete.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Pacientes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudGVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Pacientes/Details.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Pacientes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudGVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Pacientes/Edit.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Pacientes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudGVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Pacientes/Index.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Pacientes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Shared/Error.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Tratamientoes/Create.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Tratamientoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhdGFtaWVudG9lc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Tratamientoes/Delete.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Tratamientoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhdGFtaWVudG9lc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Tratamientoes/Details.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Tratamientoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhdGFtaWVudG9lc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Tratamientoes/Edit.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Tratamientoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhdGFtaWVudG9lc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Tratamientoes/Index.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Tratamientoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhdGFtaWVudG9lc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/_ViewImports.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/_ViewStart.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bruno/Source/Repos/FirstCode/CodeFirst/Views/Shared/_Layout.cshtml]
+[C:/Users/User/source/repos/Nueva carpeta/CodeFirst/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-mduye2hf70

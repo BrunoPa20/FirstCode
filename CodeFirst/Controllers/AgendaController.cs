@@ -36,7 +36,7 @@ namespace CodeFirst.Controllers
             var agenda = await _context.agendas
                 .Include(a => a.Odontologo)
                 .Include(a => a.Paciente)
-                .FirstOrDefaultAsync(m => m.IDPaciente == id);
+                .FirstOrDefaultAsync(m => m.IDAgenda == id);
             if (agenda == null)
             {
                 return NotFound();
@@ -58,7 +58,7 @@ namespace CodeFirst.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Motivo,Fecha_Hora_Inicio,Fecha_Hora_Fin,IDPaciente,IDOdontologo")] Agenda agenda)
+        public async Task<IActionResult> Create([Bind("IDAgenda,Motivo,Fecha_Hora_Inicio,Fecha_Hora_Fin,IDPaciente,IDOdontologo")] Agenda agenda)
         {
             if (ModelState.IsValid)
             {
@@ -94,9 +94,9 @@ namespace CodeFirst.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Motivo,Fecha_Hora_Inicio,Fecha_Hora_Fin,IDPaciente,IDOdontologo")] Agenda agenda)
+        public async Task<IActionResult> Edit(int id, [Bind("IDAgenda,Motivo,Fecha_Hora_Inicio,Fecha_Hora_Fin,IDPaciente,IDOdontologo")] Agenda agenda)
         {
-            if (id != agenda.IDPaciente)
+            if (id != agenda.IDAgenda)
             {
                 return NotFound();
             }
@@ -110,7 +110,7 @@ namespace CodeFirst.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!AgendaExists(agenda.IDPaciente))
+                    if (!AgendaExists(agenda.IDAgenda))
                     {
                         return NotFound();
                     }
@@ -137,7 +137,7 @@ namespace CodeFirst.Controllers
             var agenda = await _context.agendas
                 .Include(a => a.Odontologo)
                 .Include(a => a.Paciente)
-                .FirstOrDefaultAsync(m => m.IDPaciente == id);
+                .FirstOrDefaultAsync(m => m.IDAgenda == id);
             if (agenda == null)
             {
                 return NotFound();
@@ -167,7 +167,7 @@ namespace CodeFirst.Controllers
 
         private bool AgendaExists(int id)
         {
-          return (_context.agendas?.Any(e => e.IDPaciente == id)).GetValueOrDefault();
+          return (_context.agendas?.Any(e => e.IDAgenda == id)).GetValueOrDefault();
         }
     }
 }

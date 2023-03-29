@@ -16,7 +16,7 @@ namespace CodeFirst.Models
         public Paciente()
         {
             Realizas = new List<Realiza>();
-            Agendas = new List<Agenda>();
+            Agenda = new List<Agenda>();
             Historials = new List<Historial>();
             Tutor_Padres = new List<Tutor_Padre>();
             Pago_Tratamientos = new List<Pago_Tratamiento>();
@@ -24,7 +24,7 @@ namespace CodeFirst.Models
 
         //Propiedades de navegacion
         public virtual List<Realiza> Realizas { get; set; }
-        public virtual List<Agenda> Agendas { get; set; }
+        public virtual List<Agenda> Agenda { get; set; }
         public virtual List<Historial> Historials { get; set; }
         public virtual List<Tutor_Padre> Tutor_Padres { get; set; }
         public virtual List<Pago_Tratamiento> Pago_Tratamientos { get; set; }
