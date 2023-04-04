@@ -21,9 +21,7 @@ namespace CodeFirst.Controllers
         // GET: Pacientes
         public async Task<IActionResult> Index()
         {
-              return _context.Pacientes != null ? 
-                          View(await _context.Pacientes.ToListAsync()) :
-                          Problem("Entity set 'MyDbContext.Pacientes'  is null.");
+              return View(await _context.Pacientes.ToListAsync());
         }
 
         // GET: Pacientes/Details/5
@@ -55,7 +53,7 @@ namespace CodeFirst.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IDPaciente,P_Nombre,P_DNI,P_Domicilio,P_Telefono,P_FechaNac,P_Ocupacion")] Paciente paciente)
+        public async Task<IActionResult> Create([Bind("IDPaciente,P_Nombre,P_Apellido,P_DNI,P_Email,P_Domicilio,P_Telefono,P_FechaNac,P_Ocupacion")] Paciente paciente)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +85,7 @@ namespace CodeFirst.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IDPaciente,P_Nombre,P_DNI,P_Domicilio,P_Telefono,P_FechaNac,P_Ocupacion")] Paciente paciente)
+        public async Task<IActionResult> Edit(int id, [Bind("IDPaciente,P_Nombre,P_Apellido,P_DNI,P_Email,P_Domicilio,P_Telefono,P_FechaNac,P_Ocupacion")] Paciente paciente)
         {
             if (id != paciente.IDPaciente)
             {
@@ -156,7 +154,7 @@ namespace CodeFirst.Controllers
 
         private bool PacienteExists(int id)
         {
-          return (_context.Pacientes?.Any(e => e.IDPaciente == id)).GetValueOrDefault();
+          return _context.Pacientes.Any(e => e.IDPaciente == id);
         }
     }
 }

@@ -48,8 +48,8 @@ namespace CodeFirst.Controllers
         // GET: Agenda/Create
         public IActionResult Create()
         {
-            ViewData["IDOdontologo"] = new SelectList(_context.Odontologos, "IDOdontologo", "IDOdontologo");
-            ViewData["IDPaciente"] = new SelectList(_context.Pacientes, "IDPaciente", "IDPaciente");
+            ViewData["IDOdontologo"] = new SelectList(_context.Odontologos, "IDOdontologo", "OD_Nombre");
+            ViewData["IDPaciente"] = new SelectList(_context.Pacientes, "IDPaciente", "P_Nombre");
             return View();
         }
 
@@ -84,8 +84,8 @@ namespace CodeFirst.Controllers
             {
                 return NotFound();
             }
-            ViewData["IDOdontologo"] = new SelectList(_context.Odontologos, "IDOdontologo", "IDOdontologo", agenda.IDOdontologo);
-            ViewData["IDPaciente"] = new SelectList(_context.Pacientes, "IDPaciente", "IDPaciente", agenda.IDPaciente);
+            ViewData["IDOdontologo"] = new SelectList(_context.Odontologos, "IDOdontologo", "OD_Nombre", agenda.IDOdontologo);
+            ViewData["IDPaciente"] = new SelectList(_context.Pacientes, "IDPaciente", "P_Nombre", agenda.IDPaciente);
             return View(agenda);
         }
 

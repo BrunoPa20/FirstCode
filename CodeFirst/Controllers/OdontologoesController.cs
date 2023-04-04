@@ -21,9 +21,7 @@ namespace CodeFirst.Controllers
         // GET: Odontologoes
         public async Task<IActionResult> Index()
         {
-              return _context.Odontologos != null ? 
-                          View(await _context.Odontologos.ToListAsync()) :
-                          Problem("Entity set 'MyDbContext.Odontologos'  is null.");
+              return View(await _context.Odontologos.ToListAsync());
         }
 
         // GET: Odontologoes/Details/5
@@ -55,7 +53,7 @@ namespace CodeFirst.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IDOdontologo,OD_Nombre,OD_Telefono,OD_Domicilio,OD_Turno,OD_Usuario,OD_Password")] Odontologo odontologo)
+        public async Task<IActionResult> Create([Bind("IDOdontologo,OD_Nombre,OD_Apellido,OD_DNI,OD_Email,OD_Telefono,OD_Domicilio,OD_Turno")] Odontologo odontologo)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +85,7 @@ namespace CodeFirst.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IDOdontologo,OD_Nombre,OD_Telefono,OD_Domicilio,OD_Turno,OD_Usuario,OD_Password")] Odontologo odontologo)
+        public async Task<IActionResult> Edit(int id, [Bind("IDOdontologo,OD_Nombre,OD_Apellido,OD_DNI,OD_Email,OD_Telefono,OD_Domicilio,OD_Turno")] Odontologo odontologo)
         {
             if (id != odontologo.IDOdontologo)
             {
@@ -156,7 +154,7 @@ namespace CodeFirst.Controllers
 
         private bool OdontologoExists(int id)
         {
-          return (_context.Odontologos?.Any(e => e.IDOdontologo == id)).GetValueOrDefault();
+          return _context.Odontologos.Any(e => e.IDOdontologo == id);
         }
     }
 }

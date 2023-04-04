@@ -7,7 +7,9 @@ namespace CodeFirst.Models
     {
         public int IDPaciente { get; set; }
         public string P_Nombre { get; set; }
+        public string P_Apellido { get; set; }
         public string P_DNI { get; set; }
+        public string P_Email { get; set; }
         public string P_Domicilio { get; set; }
         public string P_Telefono { get; set; }
         public DateTime P_FechaNac { get; set; }

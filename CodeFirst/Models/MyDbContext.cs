@@ -31,6 +31,8 @@ namespace CodeFirst.Models
 
             modelBuilder.Entity<Paciente>().HasKey(p => p.IDPaciente);
             modelBuilder.Entity<Paciente>().Property(p => p.P_Nombre).HasMaxLength(50);
+            modelBuilder.Entity<Paciente>().Property(p => p.P_Apellido).HasMaxLength(50);
+
             modelBuilder.Entity<Paciente>().Property(p => p.P_DNI).HasMaxLength(50);
             modelBuilder.Entity<Paciente>().Property(p => p.P_Domicilio).HasMaxLength(50);
             modelBuilder.Entity<Paciente>().Property(p => p.P_Telefono).HasMaxLength(50); ;
@@ -62,11 +64,14 @@ namespace CodeFirst.Models
 
             modelBuilder.Entity<Odontologo>().HasKey(od => od.IDOdontologo);
             modelBuilder.Entity<Odontologo>().Property(od => od.OD_Nombre).HasMaxLength(50);
+            modelBuilder.Entity<Odontologo>().Property(od => od.OD_Apellido).HasMaxLength(50);
+            modelBuilder.Entity<Odontologo>().Property(od => od.OD_DNI).HasMaxLength(50);
+            modelBuilder.Entity<Odontologo>().Property(od => od.OD_Email).HasMaxLength(50);
             modelBuilder.Entity<Odontologo>().Property(od => od.OD_Telefono).HasMaxLength(50);
             modelBuilder.Entity<Odontologo>().Property(od => od.OD_Domicilio).HasMaxLength(50);
             modelBuilder.Entity<Odontologo>().Property(od => od.OD_Turno).HasMaxLength(50);
-            modelBuilder.Entity<Odontologo>().Property(od=>od.OD_Usuario).HasMaxLength(50);
-            modelBuilder.Entity<Odontologo>().Property(od => od.OD_Password).HasMaxLength(50);
+            //modelBuilder.Entity<Odontologo>().Property(od=>od.OD_Usuario).HasMaxLength(50);
+            //modelBuilder.Entity<Odontologo>().Property(od => od.OD_Password).HasMaxLength(50);
 
 
             //-------------------------------------------------------------------------------------------------

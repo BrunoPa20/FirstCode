@@ -16,6 +16,15 @@
                 @Html.DisplayNameFor(model => model.OD_Nombre)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.OD_Apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OD_DNI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OD_Email)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.OD_Telefono)
             </th>
             <th>
@@ -23,12 +32,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.OD_Turno)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.OD_Usuario)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.OD_Password)
             </th>
             <th></th>
         </tr>
@@ -40,6 +43,15 @@
                 @Html.DisplayFor(modelItem => item.OD_Nombre)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.OD_Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OD_DNI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OD_Email)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.OD_Telefono)
             </td>
             <td>
@@ -47,12 +59,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.OD_Turno)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.OD_Usuario)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.OD_Password)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.IDOdontologo">Edit</a> |
